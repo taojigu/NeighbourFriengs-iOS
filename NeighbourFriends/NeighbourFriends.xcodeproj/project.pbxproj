@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC8037521B8F502000A91767 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8037511B8F502000A91767 /* main.m */; };
+		CC8037551B8F502000A91767 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8037541B8F502000A91767 /* AppDelegate.m */; };
+		CC8037581B8F502000A91767 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8037571B8F502000A91767 /* ViewController.m */; };
+		CC80375B1B8F502000A91767 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC8037591B8F502000A91767 /* Main.storyboard */; };
+		CC80375D1B8F502000A91767 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC80375C1B8F502000A91767 /* Images.xcassets */; };
+		CC8037601B8F502000A91767 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC80375E1B8F502000A91767 /* LaunchScreen.xib */; };
+		CC80376C1B8F502000A91767 /* NeighbourFriendsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC80376B1B8F502000A91767 /* NeighbourFriendsTests.m */; };
+		CC8037811B92EADC00A91767 /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC8037801B92EADC00A91767 /* User.storyboard */; };
+		CC8037881B92EE0800A91767 /* RegisterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8037871B92EE0800A91767 /* RegisterVC.m */; };
+		CC80378B1B92EE2600A91767 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CC80378A1B92EE2600A91767 /* LoginVC.m */; };
+		CC80378E1B93008E00A91767 /* Register2VC.m in Sources */ = {isa = PBXBuildFile; fileRef = CC80378D1B93008E00A91767 /* Register2VC.m */; };
+		CC8037921B9309CB00A91767 /* Manage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC8037911B9309CA00A91767 /* Manage.storyboard */; };
+		CC8037961B930B7000A91767 /* ProfileSettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8037951B930B7000A91767 /* ProfileSettingVC.m */; };
+		CC8037991B930D3200A91767 /* MyLocationTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8037981B930D3200A91767 /* MyLocationTVC.m */; };
+		CC80379C1B930DD400A91767 /* LocationDetailTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CC80379B1B930DD400A91767 /* LocationDetailTVC.m */; };
+		CC80379F1B930FD200A91767 /* MyLocationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CC80379E1B930FD200A91767 /* MyLocationVC.m */; };
+		CC8037A21B93103900A91767 /* ImportMoblieBuddyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8037A11B93103900A91767 /* ImportMoblieBuddyVC.m */; };
+		CC8037A51B9310EF00A91767 /* MobileBuddyTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8037A41B9310EF00A91767 /* MobileBuddyTVC.m */; };
+		CC8037A71B933BD100A91767 /* Browse.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC8037A61B933BD100A91767 /* Browse.storyboard */; };
+		CC8037AB1B933FF800A91767 /* BuddyLocationTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8037AA1B933FF800A91767 /* BuddyLocationTVC.m */; };
+		CC8037AE1B9341AE00A91767 /* BuddyMapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8037AD1B9341AE00A91767 /* BuddyMapVC.m */; };
+		CC8037B11B9341D200A91767 /* BuddyLocationMapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8037B01B9341D200A91767 /* BuddyLocationMapVC.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC8037661B8F502000A91767 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC8037441B8F502000A91767 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC80374B1B8F502000A91767;
+			remoteInfo = NeighbourFriends;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CC80374C1B8F502000A91767 /* NeighbourFriends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeighbourFriends.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC8037501B8F502000A91767 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC8037511B8F502000A91767 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CC8037531B8F502000A91767 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CC8037541B8F502000A91767 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CC8037561B8F502000A91767 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CC8037571B8F502000A91767 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CC80375A1B8F502000A91767 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CC80375C1B8F502000A91767 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CC80375F1B8F502000A91767 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CC8037651B8F502000A91767 /* NeighbourFriendsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeighbourFriendsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC80376A1B8F502000A91767 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC80376B1B8F502000A91767 /* NeighbourFriendsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NeighbourFriendsTests.m; sourceTree = "<group>"; };
+		CC8037801B92EADC00A91767 /* User.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = User.storyboard; path = MainSrc/User/User.storyboard; sourceTree = "<group>"; };
+		CC8037861B92EE0800A91767 /* RegisterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisterVC.h; path = MainSrc/User/ViewController/RegisterVC.h; sourceTree = "<group>"; };
+		CC8037871B92EE0800A91767 /* RegisterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegisterVC.m; path = MainSrc/User/ViewController/RegisterVC.m; sourceTree = "<group>"; };
+		CC8037891B92EE2600A91767 /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginVC.h; path = MainSrc/User/ViewController/LoginVC.h; sourceTree = "<group>"; };
+		CC80378A1B92EE2600A91767 /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginVC.m; path = MainSrc/User/ViewController/LoginVC.m; sourceTree = "<group>"; };
+		CC80378C1B93008E00A91767 /* Register2VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Register2VC.h; path = MainSrc/User/ViewController/Register2VC.h; sourceTree = "<group>"; };
+		CC80378D1B93008E00A91767 /* Register2VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Register2VC.m; path = MainSrc/User/ViewController/Register2VC.m; sourceTree = "<group>"; };
+		CC8037901B9300C500A91767 /* UserNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserNotification.h; path = Const/UserNotification.h; sourceTree = "<group>"; };
+		CC8037911B9309CA00A91767 /* Manage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Manage.storyboard; path = MainSrc/Manage/Manage.storyboard; sourceTree = "<group>"; };
+		CC8037941B930B7000A91767 /* ProfileSettingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfileSettingVC.h; path = MainSrc/Manage/ViewController/ProfileSettingVC.h; sourceTree = "<group>"; };
+		CC8037951B930B7000A91767 /* ProfileSettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileSettingVC.m; path = MainSrc/Manage/ViewController/ProfileSettingVC.m; sourceTree = "<group>"; };
+		CC8037971B930D3200A91767 /* MyLocationTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyLocationTVC.h; path = MainSrc/Manage/ViewController/MyLocationTVC.h; sourceTree = "<group>"; };
+		CC8037981B930D3200A91767 /* MyLocationTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyLocationTVC.m; path = MainSrc/Manage/ViewController/MyLocationTVC.m; sourceTree = "<group>"; };
+		CC80379A1B930DD400A91767 /* LocationDetailTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocationDetailTVC.h; path = MainSrc/Manage/ViewController/LocationDetailTVC.h; sourceTree = "<group>"; };
+		CC80379B1B930DD400A91767 /* LocationDetailTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocationDetailTVC.m; path = MainSrc/Manage/ViewController/LocationDetailTVC.m; sourceTree = "<group>"; };
+		CC80379D1B930FD200A91767 /* MyLocationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyLocationVC.h; path = MainSrc/Manage/ViewController/MyLocationVC.h; sourceTree = "<group>"; };
+		CC80379E1B930FD200A91767 /* MyLocationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyLocationVC.m; path = MainSrc/Manage/ViewController/MyLocationVC.m; sourceTree = "<group>"; };
+		CC8037A01B93103900A91767 /* ImportMoblieBuddyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImportMoblieBuddyVC.h; path = MainSrc/Manage/ViewController/ImportMoblieBuddyVC.h; sourceTree = "<group>"; };
+		CC8037A11B93103900A91767 /* ImportMoblieBuddyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImportMoblieBuddyVC.m; path = MainSrc/Manage/ViewController/ImportMoblieBuddyVC.m; sourceTree = "<group>"; };
+		CC8037A31B9310EF00A91767 /* MobileBuddyTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MobileBuddyTVC.h; path = MainSrc/Manage/ViewController/MobileBuddyTVC.h; sourceTree = "<group>"; };
+		CC8037A41B9310EF00A91767 /* MobileBuddyTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MobileBuddyTVC.m; path = MainSrc/Manage/ViewController/MobileBuddyTVC.m; sourceTree = "<group>"; };
+		CC8037A61B933BD100A91767 /* Browse.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Browse.storyboard; path = MainSrc/Browse/Browse.storyboard; sourceTree = "<group>"; };
+		CC8037A91B933FF800A91767 /* BuddyLocationTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BuddyLocationTVC.h; path = MainSrc/Browse/ViewController/BuddyLocationTVC.h; sourceTree = "<group>"; };
+		CC8037AA1B933FF800A91767 /* BuddyLocationTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BuddyLocationTVC.m; path = MainSrc/Browse/ViewController/BuddyLocationTVC.m; sourceTree = "<group>"; };
+		CC8037AC1B9341AE00A91767 /* BuddyMapVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BuddyMapVC.h; path = MainSrc/Browse/ViewController/BuddyMapVC.h; sourceTree = "<group>"; };
+		CC8037AD1B9341AE00A91767 /* BuddyMapVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BuddyMapVC.m; path = MainSrc/Browse/ViewController/BuddyMapVC.m; sourceTree = "<group>"; };
+		CC8037AF1B9341D200A91767 /* BuddyLocationMapVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BuddyLocationMapVC.h; path = MainSrc/Browse/ViewController/BuddyLocationMapVC.h; sourceTree = "<group>"; };
+		CC8037B01B9341D200A91767 /* BuddyLocationMapVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BuddyLocationMapVC.m; path = MainSrc/Browse/ViewController/BuddyLocationMapVC.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC8037491B8F502000A91767 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC8037621B8F502000A91767 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC8037431B8F502000A91767 = {
+			isa = PBXGroup;
+			children = (
+				CC80378F1B93009600A91767 /* Const */,
+				CC80377B1B92AEF700A91767 /* Util */,
+				CC80377A1B92AEDA00A91767 /* MainSrc */,
+				CC8037791B92AED100A91767 /* ThirdPart */,
+				CC80374E1B8F502000A91767 /* NeighbourFriends */,
+				CC8037681B8F502000A91767 /* NeighbourFriendsTests */,
+				CC80374D1B8F502000A91767 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CC80374D1B8F502000A91767 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC80374C1B8F502000A91767 /* NeighbourFriends.app */,
+				CC8037651B8F502000A91767 /* NeighbourFriendsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC80374E1B8F502000A91767 /* NeighbourFriends */ = {
+			isa = PBXGroup;
+			children = (
+				CC8037531B8F502000A91767 /* AppDelegate.h */,
+				CC8037541B8F502000A91767 /* AppDelegate.m */,
+				CC8037561B8F502000A91767 /* ViewController.h */,
+				CC8037571B8F502000A91767 /* ViewController.m */,
+				CC8037591B8F502000A91767 /* Main.storyboard */,
+				CC80375C1B8F502000A91767 /* Images.xcassets */,
+				CC80375E1B8F502000A91767 /* LaunchScreen.xib */,
+				CC80374F1B8F502000A91767 /* Supporting Files */,
+			);
+			path = NeighbourFriends;
+			sourceTree = "<group>";
+		};
+		CC80374F1B8F502000A91767 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC8037501B8F502000A91767 /* Info.plist */,
+				CC8037511B8F502000A91767 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CC8037681B8F502000A91767 /* NeighbourFriendsTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC80376B1B8F502000A91767 /* NeighbourFriendsTests.m */,
+				CC8037691B8F502000A91767 /* Supporting Files */,
+			);
+			path = NeighbourFriendsTests;
+			sourceTree = "<group>";
+		};
+		CC8037691B8F502000A91767 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC80376A1B8F502000A91767 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CC8037791B92AED100A91767 /* ThirdPart */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ThirdPart;
+			sourceTree = "<group>";
+		};
+		CC80377A1B92AEDA00A91767 /* MainSrc */ = {
+			isa = PBXGroup;
+			children = (
+				CC80377F1B92E69C00A91767 /* Buddy */,
+				CC80377E1B92E68F00A91767 /* Manage */,
+				CC80377D1B92E67300A91767 /* Browse */,
+				CC80377C1B92E66100A91767 /* User */,
+			);
+			name = MainSrc;
+			sourceTree = "<group>";
+		};
+		CC80377B1B92AEF700A91767 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		CC80377C1B92E66100A91767 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				CC8037821B92ED9C00A91767 /* ViewController */,
+				CC8037801B92EADC00A91767 /* User.storyboard */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		CC80377D1B92E67300A91767 /* Browse */ = {
+			isa = PBXGroup;
+			children = (
+				CC8037A81B933F8C00A91767 /* ViewController */,
+				CC8037A61B933BD100A91767 /* Browse.storyboard */,
+			);
+			name = Browse;
+			sourceTree = "<group>";
+		};
+		CC80377E1B92E68F00A91767 /* Manage */ = {
+			isa = PBXGroup;
+			children = (
+				CC8037931B930B4000A91767 /* ViewController */,
+				CC8037911B9309CA00A91767 /* Manage.storyboard */,
+			);
+			name = Manage;
+			sourceTree = "<group>";
+		};
+		CC80377F1B92E69C00A91767 /* Buddy */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Buddy;
+			sourceTree = "<group>";
+		};
+		CC8037821B92ED9C00A91767 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CC8037861B92EE0800A91767 /* RegisterVC.h */,
+				CC8037871B92EE0800A91767 /* RegisterVC.m */,
+				CC8037891B92EE2600A91767 /* LoginVC.h */,
+				CC80378A1B92EE2600A91767 /* LoginVC.m */,
+				CC80378C1B93008E00A91767 /* Register2VC.h */,
+				CC80378D1B93008E00A91767 /* Register2VC.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		CC80378F1B93009600A91767 /* Const */ = {
+			isa = PBXGroup;
+			children = (
+				CC8037901B9300C500A91767 /* UserNotification.h */,
+			);
+			name = Const;
+			sourceTree = "<group>";
+		};
+		CC8037931B930B4000A91767 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CC8037941B930B7000A91767 /* ProfileSettingVC.h */,
+				CC8037951B930B7000A91767 /* ProfileSettingVC.m */,
+				CC8037971B930D3200A91767 /* MyLocationTVC.h */,
+				CC8037981B930D3200A91767 /* MyLocationTVC.m */,
+				CC80379A1B930DD400A91767 /* LocationDetailTVC.h */,
+				CC80379B1B930DD400A91767 /* LocationDetailTVC.m */,
+				CC80379D1B930FD200A91767 /* MyLocationVC.h */,
+				CC80379E1B930FD200A91767 /* MyLocationVC.m */,
+				CC8037A01B93103900A91767 /* ImportMoblieBuddyVC.h */,
+				CC8037A11B93103900A91767 /* ImportMoblieBuddyVC.m */,
+				CC8037A31B9310EF00A91767 /* MobileBuddyTVC.h */,
+				CC8037A41B9310EF00A91767 /* MobileBuddyTVC.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		CC8037A81B933F8C00A91767 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CC8037A91B933FF800A91767 /* BuddyLocationTVC.h */,
+				CC8037AA1B933FF800A91767 /* BuddyLocationTVC.m */,
+				CC8037AC1B9341AE00A91767 /* BuddyMapVC.h */,
+				CC8037AD1B9341AE00A91767 /* BuddyMapVC.m */,
+				CC8037AF1B9341D200A91767 /* BuddyLocationMapVC.h */,
+				CC8037B01B9341D200A91767 /* BuddyLocationMapVC.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC80374B1B8F502000A91767 /* NeighbourFriends */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC80376F1B8F502000A91767 /* Build configuration list for PBXNativeTarget "NeighbourFriends" */;
+			buildPhases = (
+				CC8037481B8F502000A91767 /* Sources */,
+				CC8037491B8F502000A91767 /* Frameworks */,
+				CC80374A1B8F502000A91767 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NeighbourFriends;
+			productName = NeighbourFriends;
+			productReference = CC80374C1B8F502000A91767 /* NeighbourFriends.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CC8037641B8F502000A91767 /* NeighbourFriendsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC8037721B8F502000A91767 /* Build configuration list for PBXNativeTarget "NeighbourFriendsTests" */;
+			buildPhases = (
+				CC8037611B8F502000A91767 /* Sources */,
+				CC8037621B8F502000A91767 /* Frameworks */,
+				CC8037631B8F502000A91767 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC8037671B8F502000A91767 /* PBXTargetDependency */,
+			);
+			name = NeighbourFriendsTests;
+			productName = NeighbourFriendsTests;
+			productReference = CC8037651B8F502000A91767 /* NeighbourFriendsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC8037441B8F502000A91767 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = gujitao;
+				TargetAttributes = {
+					CC80374B1B8F502000A91767 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = UMRACKG926;
+					};
+					CC8037641B8F502000A91767 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = CC80374B1B8F502000A91767;
+					};
+				};
+			};
+			buildConfigurationList = CC8037471B8F502000A91767 /* Build configuration list for PBXProject "NeighbourFriends" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC8037431B8F502000A91767;
+			productRefGroup = CC80374D1B8F502000A91767 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC80374B1B8F502000A91767 /* NeighbourFriends */,
+				CC8037641B8F502000A91767 /* NeighbourFriendsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC80374A1B8F502000A91767 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC8037A71B933BD100A91767 /* Browse.storyboard in Resources */,
+				CC80375B1B8F502000A91767 /* Main.storyboard in Resources */,
+				CC8037811B92EADC00A91767 /* User.storyboard in Resources */,
+				CC8037921B9309CB00A91767 /* Manage.storyboard in Resources */,
+				CC8037601B8F502000A91767 /* LaunchScreen.xib in Resources */,
+				CC80375D1B8F502000A91767 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC8037631B8F502000A91767 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC8037481B8F502000A91767 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC80379C1B930DD400A91767 /* LocationDetailTVC.m in Sources */,
+				CC80378E1B93008E00A91767 /* Register2VC.m in Sources */,
+				CC8037AE1B9341AE00A91767 /* BuddyMapVC.m in Sources */,
+				CC8037581B8F502000A91767 /* ViewController.m in Sources */,
+				CC80378B1B92EE2600A91767 /* LoginVC.m in Sources */,
+				CC8037881B92EE0800A91767 /* RegisterVC.m in Sources */,
+				CC8037AB1B933FF800A91767 /* BuddyLocationTVC.m in Sources */,
+				CC8037961B930B7000A91767 /* ProfileSettingVC.m in Sources */,
+				CC8037551B8F502000A91767 /* AppDelegate.m in Sources */,
+				CC80379F1B930FD200A91767 /* MyLocationVC.m in Sources */,
+				CC8037A51B9310EF00A91767 /* MobileBuddyTVC.m in Sources */,
+				CC8037991B930D3200A91767 /* MyLocationTVC.m in Sources */,
+				CC8037521B8F502000A91767 /* main.m in Sources */,
+				CC8037B11B9341D200A91767 /* BuddyLocationMapVC.m in Sources */,
+				CC8037A21B93103900A91767 /* ImportMoblieBuddyVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC8037611B8F502000A91767 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC80376C1B8F502000A91767 /* NeighbourFriendsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC8037671B8F502000A91767 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC80374B1B8F502000A91767 /* NeighbourFriends */;
+			targetProxy = CC8037661B8F502000A91767 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CC8037591B8F502000A91767 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC80375A1B8F502000A91767 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CC80375E1B8F502000A91767 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC80375F1B8F502000A91767 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC80376D1B8F502000A91767 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CC80376E1B8F502000A91767 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC8037701B8F502000A91767 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = NeighbourFriends/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CC8037711B8F502000A91767 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = NeighbourFriends/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CC8037731B8F502000A91767 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NeighbourFriendsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NeighbourFriends.app/NeighbourFriends";
+			};
+			name = Debug;
+		};
+		CC8037741B8F502000A91767 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NeighbourFriendsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NeighbourFriends.app/NeighbourFriends";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC8037471B8F502000A91767 /* Build configuration list for PBXProject "NeighbourFriends" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC80376D1B8F502000A91767 /* Debug */,
+				CC80376E1B8F502000A91767 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC80376F1B8F502000A91767 /* Build configuration list for PBXNativeTarget "NeighbourFriends" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC8037701B8F502000A91767 /* Debug */,
+				CC8037711B8F502000A91767 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CC8037721B8F502000A91767 /* Build configuration list for PBXNativeTarget "NeighbourFriendsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC8037731B8F502000A91767 /* Debug */,
+				CC8037741B8F502000A91767 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC8037441B8F502000A91767 /* Project object */;
+}
