@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC7BFACF1B9931FC00065A33 /* ManageDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7BFACE1B9931FC00065A33 /* ManageDemoVC.m */; };
+		CC7BFAD31B993D9A00065A33 /* BuddyLocationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7BFAD21B993D9A00065A33 /* BuddyLocationCell.m */; };
+		CC7BFAEE1B99494E00065A33 /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CC7BFAD61B99494E00065A33 /* MJRefresh.bundle */; };
+		CC7BFAEF1B99494E00065A33 /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7BFAD91B99494E00065A33 /* MJRefreshComponent.m */; };
+		CC7BFAF01B99494E00065A33 /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7BFADB1B99494E00065A33 /* MJRefreshConst.m */; };
+		CC7BFAF11B99494E00065A33 /* MJRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7BFADD1B99494E00065A33 /* MJRefreshFooter.m */; };
+		CC7BFAF21B99494E00065A33 /* MJRefreshGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7BFADF1B99494E00065A33 /* MJRefreshGifFooter.m */; };
+		CC7BFAF31B99494E00065A33 /* MJRefreshGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7BFAE11B99494E00065A33 /* MJRefreshGifHeader.m */; };
+		CC7BFAF41B99494E00065A33 /* MJRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7BFAE31B99494E00065A33 /* MJRefreshHeader.m */; };
+		CC7BFAF51B99494E00065A33 /* MJRefreshLegendFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7BFAE51B99494E00065A33 /* MJRefreshLegendFooter.m */; };
+		CC7BFAF61B99494E00065A33 /* MJRefreshLegendHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7BFAE71B99494E00065A33 /* MJRefreshLegendHeader.m */; };
+		CC7BFAF71B99494E00065A33 /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7BFAE91B99494E00065A33 /* UIScrollView+MJExtension.m */; };
+		CC7BFAF81B99494E00065A33 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7BFAEB1B99494E00065A33 /* UIScrollView+MJRefresh.m */; };
+		CC7BFAF91B99494E00065A33 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7BFAED1B99494E00065A33 /* UIView+MJExtension.m */; };
 		CC8037521B8F502000A91767 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8037511B8F502000A91767 /* main.m */; };
 		CC8037551B8F502000A91767 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8037541B8F502000A91767 /* AppDelegate.m */; };
 		CC8037581B8F502000A91767 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8037571B8F502000A91767 /* ViewController.m */; };
@@ -27,7 +41,6 @@
 		CC8037A51B9310EF00A91767 /* MobileBuddyTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8037A41B9310EF00A91767 /* MobileBuddyTVC.m */; };
 		CC8037A71B933BD100A91767 /* Browse.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC8037A61B933BD100A91767 /* Browse.storyboard */; };
 		CC8037AB1B933FF800A91767 /* BuddyLocationTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8037AA1B933FF800A91767 /* BuddyLocationTVC.m */; };
-		CC8037AE1B9341AE00A91767 /* BuddyMapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8037AD1B9341AE00A91767 /* BuddyMapVC.m */; };
 		CC8037B11B9341D200A91767 /* BuddyLocationMapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8037B01B9341D200A91767 /* BuddyLocationMapVC.m */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +55,34 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC7BFACD1B9931FC00065A33 /* ManageDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ManageDemoVC.h; path = MainSrc/Manage/ViewController/ManageDemoVC.h; sourceTree = "<group>"; };
+		CC7BFACE1B9931FC00065A33 /* ManageDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ManageDemoVC.m; path = MainSrc/Manage/ViewController/ManageDemoVC.m; sourceTree = "<group>"; };
+		CC7BFAD11B993D9A00065A33 /* BuddyLocationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BuddyLocationCell.h; path = MainSrc/Browse/ViewController/Cell/BuddyLocationCell.h; sourceTree = "<group>"; };
+		CC7BFAD21B993D9A00065A33 /* BuddyLocationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BuddyLocationCell.m; path = MainSrc/Browse/ViewController/Cell/BuddyLocationCell.m; sourceTree = "<group>"; };
+		CC7BFAD61B99494E00065A33 /* MJRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MJRefresh.bundle; path = ThirdPart/MJRefresh/MJRefresh.bundle; sourceTree = "<group>"; };
+		CC7BFAD71B99494E00065A33 /* MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MJRefresh.h; path = ThirdPart/MJRefresh/MJRefresh.h; sourceTree = "<group>"; };
+		CC7BFAD81B99494E00065A33 /* MJRefreshComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MJRefreshComponent.h; path = ThirdPart/MJRefresh/MJRefreshComponent.h; sourceTree = "<group>"; };
+		CC7BFAD91B99494E00065A33 /* MJRefreshComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MJRefreshComponent.m; path = ThirdPart/MJRefresh/MJRefreshComponent.m; sourceTree = "<group>"; };
+		CC7BFADA1B99494E00065A33 /* MJRefreshConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MJRefreshConst.h; path = ThirdPart/MJRefresh/MJRefreshConst.h; sourceTree = "<group>"; };
+		CC7BFADB1B99494E00065A33 /* MJRefreshConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MJRefreshConst.m; path = ThirdPart/MJRefresh/MJRefreshConst.m; sourceTree = "<group>"; };
+		CC7BFADC1B99494E00065A33 /* MJRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MJRefreshFooter.h; path = ThirdPart/MJRefresh/MJRefreshFooter.h; sourceTree = "<group>"; };
+		CC7BFADD1B99494E00065A33 /* MJRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MJRefreshFooter.m; path = ThirdPart/MJRefresh/MJRefreshFooter.m; sourceTree = "<group>"; };
+		CC7BFADE1B99494E00065A33 /* MJRefreshGifFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MJRefreshGifFooter.h; path = ThirdPart/MJRefresh/MJRefreshGifFooter.h; sourceTree = "<group>"; };
+		CC7BFADF1B99494E00065A33 /* MJRefreshGifFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MJRefreshGifFooter.m; path = ThirdPart/MJRefresh/MJRefreshGifFooter.m; sourceTree = "<group>"; };
+		CC7BFAE01B99494E00065A33 /* MJRefreshGifHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MJRefreshGifHeader.h; path = ThirdPart/MJRefresh/MJRefreshGifHeader.h; sourceTree = "<group>"; };
+		CC7BFAE11B99494E00065A33 /* MJRefreshGifHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MJRefreshGifHeader.m; path = ThirdPart/MJRefresh/MJRefreshGifHeader.m; sourceTree = "<group>"; };
+		CC7BFAE21B99494E00065A33 /* MJRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MJRefreshHeader.h; path = ThirdPart/MJRefresh/MJRefreshHeader.h; sourceTree = "<group>"; };
+		CC7BFAE31B99494E00065A33 /* MJRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MJRefreshHeader.m; path = ThirdPart/MJRefresh/MJRefreshHeader.m; sourceTree = "<group>"; };
+		CC7BFAE41B99494E00065A33 /* MJRefreshLegendFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MJRefreshLegendFooter.h; path = ThirdPart/MJRefresh/MJRefreshLegendFooter.h; sourceTree = "<group>"; };
+		CC7BFAE51B99494E00065A33 /* MJRefreshLegendFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MJRefreshLegendFooter.m; path = ThirdPart/MJRefresh/MJRefreshLegendFooter.m; sourceTree = "<group>"; };
+		CC7BFAE61B99494E00065A33 /* MJRefreshLegendHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MJRefreshLegendHeader.h; path = ThirdPart/MJRefresh/MJRefreshLegendHeader.h; sourceTree = "<group>"; };
+		CC7BFAE71B99494E00065A33 /* MJRefreshLegendHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MJRefreshLegendHeader.m; path = ThirdPart/MJRefresh/MJRefreshLegendHeader.m; sourceTree = "<group>"; };
+		CC7BFAE81B99494E00065A33 /* UIScrollView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+MJExtension.h"; path = "ThirdPart/MJRefresh/UIScrollView+MJExtension.h"; sourceTree = "<group>"; };
+		CC7BFAE91B99494E00065A33 /* UIScrollView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+MJExtension.m"; path = "ThirdPart/MJRefresh/UIScrollView+MJExtension.m"; sourceTree = "<group>"; };
+		CC7BFAEA1B99494E00065A33 /* UIScrollView+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+MJRefresh.h"; path = "ThirdPart/MJRefresh/UIScrollView+MJRefresh.h"; sourceTree = "<group>"; };
+		CC7BFAEB1B99494E00065A33 /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+MJRefresh.m"; path = "ThirdPart/MJRefresh/UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
+		CC7BFAEC1B99494E00065A33 /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+MJExtension.h"; path = "ThirdPart/MJRefresh/UIView+MJExtension.h"; sourceTree = "<group>"; };
+		CC7BFAED1B99494E00065A33 /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+MJExtension.m"; path = "ThirdPart/MJRefresh/UIView+MJExtension.m"; sourceTree = "<group>"; };
 		CC80374C1B8F502000A91767 /* NeighbourFriends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeighbourFriends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC8037501B8F502000A91767 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC8037511B8F502000A91767 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -79,8 +120,6 @@
 		CC8037A61B933BD100A91767 /* Browse.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Browse.storyboard; path = MainSrc/Browse/Browse.storyboard; sourceTree = "<group>"; };
 		CC8037A91B933FF800A91767 /* BuddyLocationTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BuddyLocationTVC.h; path = MainSrc/Browse/ViewController/BuddyLocationTVC.h; sourceTree = "<group>"; };
 		CC8037AA1B933FF800A91767 /* BuddyLocationTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BuddyLocationTVC.m; path = MainSrc/Browse/ViewController/BuddyLocationTVC.m; sourceTree = "<group>"; };
-		CC8037AC1B9341AE00A91767 /* BuddyMapVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BuddyMapVC.h; path = MainSrc/Browse/ViewController/BuddyMapVC.h; sourceTree = "<group>"; };
-		CC8037AD1B9341AE00A91767 /* BuddyMapVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BuddyMapVC.m; path = MainSrc/Browse/ViewController/BuddyMapVC.m; sourceTree = "<group>"; };
 		CC8037AF1B9341D200A91767 /* BuddyLocationMapVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BuddyLocationMapVC.h; path = MainSrc/Browse/ViewController/BuddyLocationMapVC.h; sourceTree = "<group>"; };
 		CC8037B01B9341D200A91767 /* BuddyLocationMapVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BuddyLocationMapVC.m; path = MainSrc/Browse/ViewController/BuddyLocationMapVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,9 +142,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC7BFACA1B992C8E00065A33 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Test;
+			sourceTree = "<group>";
+		};
+		CC7BFACB1B992F8700065A33 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Component;
+			sourceTree = "<group>";
+		};
+		CC7BFAD01B993D5D00065A33 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CC7BFAD11B993D9A00065A33 /* BuddyLocationCell.h */,
+				CC7BFAD21B993D9A00065A33 /* BuddyLocationCell.m */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		CC7BFAD51B99493600065A33 /* MJRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				CC7BFAD61B99494E00065A33 /* MJRefresh.bundle */,
+				CC7BFAD71B99494E00065A33 /* MJRefresh.h */,
+				CC7BFAD81B99494E00065A33 /* MJRefreshComponent.h */,
+				CC7BFAD91B99494E00065A33 /* MJRefreshComponent.m */,
+				CC7BFADA1B99494E00065A33 /* MJRefreshConst.h */,
+				CC7BFADB1B99494E00065A33 /* MJRefreshConst.m */,
+				CC7BFADC1B99494E00065A33 /* MJRefreshFooter.h */,
+				CC7BFADD1B99494E00065A33 /* MJRefreshFooter.m */,
+				CC7BFADE1B99494E00065A33 /* MJRefreshGifFooter.h */,
+				CC7BFADF1B99494E00065A33 /* MJRefreshGifFooter.m */,
+				CC7BFAE01B99494E00065A33 /* MJRefreshGifHeader.h */,
+				CC7BFAE11B99494E00065A33 /* MJRefreshGifHeader.m */,
+				CC7BFAE21B99494E00065A33 /* MJRefreshHeader.h */,
+				CC7BFAE31B99494E00065A33 /* MJRefreshHeader.m */,
+				CC7BFAE41B99494E00065A33 /* MJRefreshLegendFooter.h */,
+				CC7BFAE51B99494E00065A33 /* MJRefreshLegendFooter.m */,
+				CC7BFAE61B99494E00065A33 /* MJRefreshLegendHeader.h */,
+				CC7BFAE71B99494E00065A33 /* MJRefreshLegendHeader.m */,
+				CC7BFAE81B99494E00065A33 /* UIScrollView+MJExtension.h */,
+				CC7BFAE91B99494E00065A33 /* UIScrollView+MJExtension.m */,
+				CC7BFAEA1B99494E00065A33 /* UIScrollView+MJRefresh.h */,
+				CC7BFAEB1B99494E00065A33 /* UIScrollView+MJRefresh.m */,
+				CC7BFAEC1B99494E00065A33 /* UIView+MJExtension.h */,
+				CC7BFAED1B99494E00065A33 /* UIView+MJExtension.m */,
+			);
+			name = MJRefresh;
+			sourceTree = "<group>";
+		};
 		CC8037431B8F502000A91767 = {
 			isa = PBXGroup;
 			children = (
+				CC7BFACB1B992F8700065A33 /* Component */,
 				CC80378F1B93009600A91767 /* Const */,
 				CC80377B1B92AEF700A91767 /* Util */,
 				CC80377A1B92AEDA00A91767 /* MainSrc */,
@@ -169,6 +263,7 @@
 		CC8037791B92AED100A91767 /* ThirdPart */ = {
 			isa = PBXGroup;
 			children = (
+				CC7BFAD51B99493600065A33 /* MJRefresh */,
 			);
 			name = ThirdPart;
 			sourceTree = "<group>";
@@ -176,6 +271,7 @@
 		CC80377A1B92AEDA00A91767 /* MainSrc */ = {
 			isa = PBXGroup;
 			children = (
+				CC7BFACA1B992C8E00065A33 /* Test */,
 				CC80377F1B92E69C00A91767 /* Buddy */,
 				CC80377E1B92E68F00A91767 /* Manage */,
 				CC80377D1B92E67300A91767 /* Browse */,
@@ -261,6 +357,8 @@
 				CC8037A11B93103900A91767 /* ImportMoblieBuddyVC.m */,
 				CC8037A31B9310EF00A91767 /* MobileBuddyTVC.h */,
 				CC8037A41B9310EF00A91767 /* MobileBuddyTVC.m */,
+				CC7BFACD1B9931FC00065A33 /* ManageDemoVC.h */,
+				CC7BFACE1B9931FC00065A33 /* ManageDemoVC.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -268,10 +366,9 @@
 		CC8037A81B933F8C00A91767 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				CC7BFAD01B993D5D00065A33 /* Cell */,
 				CC8037A91B933FF800A91767 /* BuddyLocationTVC.h */,
 				CC8037AA1B933FF800A91767 /* BuddyLocationTVC.m */,
-				CC8037AC1B9341AE00A91767 /* BuddyMapVC.h */,
-				CC8037AD1B9341AE00A91767 /* BuddyMapVC.m */,
 				CC8037AF1B9341D200A91767 /* BuddyLocationMapVC.h */,
 				CC8037B01B9341D200A91767 /* BuddyLocationMapVC.m */,
 			);
@@ -361,6 +458,7 @@
 			files = (
 				CC8037A71B933BD100A91767 /* Browse.storyboard in Resources */,
 				CC80375B1B8F502000A91767 /* Main.storyboard in Resources */,
+				CC7BFAEE1B99494E00065A33 /* MJRefresh.bundle in Resources */,
 				CC8037811B92EADC00A91767 /* User.storyboard in Resources */,
 				CC8037921B9309CB00A91767 /* Manage.storyboard in Resources */,
 				CC8037601B8F502000A91767 /* LaunchScreen.xib in Resources */,
@@ -382,12 +480,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC7BFAEF1B99494E00065A33 /* MJRefreshComponent.m in Sources */,
 				CC80379C1B930DD400A91767 /* LocationDetailTVC.m in Sources */,
 				CC80378E1B93008E00A91767 /* Register2VC.m in Sources */,
-				CC8037AE1B9341AE00A91767 /* BuddyMapVC.m in Sources */,
+				CC7BFAF31B99494E00065A33 /* MJRefreshGifHeader.m in Sources */,
+				CC7BFAF71B99494E00065A33 /* UIScrollView+MJExtension.m in Sources */,
 				CC8037581B8F502000A91767 /* ViewController.m in Sources */,
 				CC80378B1B92EE2600A91767 /* LoginVC.m in Sources */,
 				CC8037881B92EE0800A91767 /* RegisterVC.m in Sources */,
+				CC7BFAF81B99494E00065A33 /* UIScrollView+MJRefresh.m in Sources */,
+				CC7BFAF21B99494E00065A33 /* MJRefreshGifFooter.m in Sources */,
 				CC8037AB1B933FF800A91767 /* BuddyLocationTVC.m in Sources */,
 				CC8037961B930B7000A91767 /* ProfileSettingVC.m in Sources */,
 				CC8037551B8F502000A91767 /* AppDelegate.m in Sources */,
@@ -395,8 +497,16 @@
 				CC8037A51B9310EF00A91767 /* MobileBuddyTVC.m in Sources */,
 				CC8037991B930D3200A91767 /* MyLocationTVC.m in Sources */,
 				CC8037521B8F502000A91767 /* main.m in Sources */,
+				CC7BFAF11B99494E00065A33 /* MJRefreshFooter.m in Sources */,
+				CC7BFAF61B99494E00065A33 /* MJRefreshLegendHeader.m in Sources */,
+				CC7BFACF1B9931FC00065A33 /* ManageDemoVC.m in Sources */,
+				CC7BFAF01B99494E00065A33 /* MJRefreshConst.m in Sources */,
 				CC8037B11B9341D200A91767 /* BuddyLocationMapVC.m in Sources */,
+				CC7BFAF91B99494E00065A33 /* UIView+MJExtension.m in Sources */,
+				CC7BFAF51B99494E00065A33 /* MJRefreshLegendFooter.m in Sources */,
 				CC8037A21B93103900A91767 /* ImportMoblieBuddyVC.m in Sources */,
+				CC7BFAD31B993D9A00065A33 /* BuddyLocationCell.m in Sources */,
+				CC7BFAF41B99494E00065A33 /* MJRefreshHeader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -595,6 +705,7 @@
 				CC8037711B8F502000A91767 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CC8037721B8F502000A91767 /* Build configuration list for PBXNativeTarget "NeighbourFriendsTests" */ = {
 			isa = XCConfigurationList;
@@ -603,6 +714,7 @@
 				CC8037741B8F502000A91767 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

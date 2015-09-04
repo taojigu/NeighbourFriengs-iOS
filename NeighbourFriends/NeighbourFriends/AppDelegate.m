@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "BuddyLocationTVC.h"
+#import "ManageDemoVC.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +19,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    self.window.rootViewController = [self loginViewController];
+    //self.window.rootViewController = [self loginViewController];
+    [self presentMainViewController];
     return YES;
 }
 
@@ -45,6 +48,40 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+#pragma mark -- MainViewControlelrs
+
+-(void)presentMainViewController
+{
+    
+    NSMutableArray* vcArray=[[NSMutableArray alloc]init];
+    UIViewController* blvc = [self buddyLocationTVC];
+    [vcArray addObject:blvc];
+    UIViewController* usvc = [self userVC];
+    [vcArray addObject:usvc];
+    UITabBarController*tabctrl = [[UITabBarController alloc]init];
+    tabctrl.viewControllers = vcArray;
+    self.window.rootViewController = tabctrl;
+}
+
+-(UIViewController*)buddyLocationTVC
+{
+    UIStoryboard*storyboard = [UIStoryboard storyboardWithName:@"Browse" bundle:nil];
+    BuddyLocationTVC*blvc =[storyboard instantiateViewControllerWithIdentifier:@"BuddyLocationTVC"];
+    UINavigationController*navi = [[UINavigationController alloc]initWithRootViewController:blvc];
+    blvc.title = NSLocalizedString(@"Home", nil);
+    return navi;
+}
+
+-(UIViewController*)userVC
+{
+    UIStoryboard*storyboard = [UIStoryboard storyboardWithName:@"Manage" bundle:nil];
+    ManageDemoVC*mdvc =[storyboard instantiateViewControllerWithIdentifier:@"ManageDemoVC"];
+    UINavigationController*navi = [[UINavigationController alloc]initWithRootViewController:mdvc];
+    mdvc.title = NSLocalizedString(@"Setting", nil);
+    return navi;
+}
+
+
 #pragma  mark -- login 
 
 -(UIViewController*)loginViewController
@@ -54,6 +91,7 @@
     UINavigationController*navi = [[UINavigationController alloc]initWithRootViewController:loginVC];
     return navi;
 }
+
 
 
 @end

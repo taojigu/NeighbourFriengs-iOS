@@ -7,6 +7,8 @@
 //
 
 #import "LoginVC.h"
+#import "RegisterVC.h"
+
 
 @interface LoginVC ()
 {
@@ -39,6 +41,9 @@
 
 -(IBAction)registerButtonClicked:(id)sender
 {
+    RegisterVC*regvc = [self.storyboard instantiateViewControllerWithIdentifier:@"RegisterVC"];
+    regvc.modalTransitionStyle=UIModalTransitionStyleFlipHorizontal;
+    [self.navigationController pushViewController:regvc animated:YES];
     
 }
 

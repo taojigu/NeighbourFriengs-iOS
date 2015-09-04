@@ -7,6 +7,7 @@
 //
 
 #import "BuddyLocationTVC.h"
+#import "BuddyLocationCell.h"
 
 @interface BuddyLocationTVC ()
 
@@ -14,14 +15,11 @@
 
 @implementation BuddyLocationTVC
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self initCustomViews];
 }
 
 - (void)didReceiveMemoryWarning
@@ -30,27 +28,39 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)initCustomViews
+{
+    [self initSearchController];
+}
+-(void)initSearchController
+{
+    
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-
+    return 10;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"BuddyLocationCell" forIndexPath:indexPath];
     
     // Configure the cell...
     
     return cell;
 }
-*/
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 70;
+}
 
 /*
 // Override to support conditional editing of the table view.
