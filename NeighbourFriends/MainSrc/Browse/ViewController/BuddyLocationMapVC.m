@@ -17,13 +17,29 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    // Dispose of any resources that can be recreated.
+    [self initCustomViews];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
 }
 
+-(void)initCustomViews
+{
+    [self initNavigationItems];
+}
+
+-(void)initNavigationItems
+{
+    UIBarButtonItem*listItem = [[UIBarButtonItem alloc]initWithTitle:NSLocalizedString(@"ListPatten", nil) style:UIBarButtonItemStylePlain target:self action:@selector(listButtonClicked)];
+    self.navigationItem.rightBarButtonItem = listItem;
+}
+-(void)listButtonClicked
+{
+    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+}
 /*
 #pragma mark - Navigation
 

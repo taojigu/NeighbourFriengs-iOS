@@ -142,6 +142,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC6664731B9DD27E00BD7B21 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
 		CC7BFACA1B992C8E00065A33 /* Test */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +159,7 @@
 		CC7BFACB1B992F8700065A33 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				CC7BFAFA1B994D6900065A33 /* PageControl */,
 			);
 			name = Component;
 			sourceTree = "<group>";
@@ -196,9 +204,17 @@
 			name = MJRefresh;
 			sourceTree = "<group>";
 		};
+		CC7BFAFA1B994D6900065A33 /* PageControl */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = PageControl;
+			sourceTree = "<group>";
+		};
 		CC8037431B8F502000A91767 = {
 			isa = PBXGroup;
 			children = (
+				CC6664731B9DD27E00BD7B21 /* Framework */,
 				CC7BFACB1B992F8700065A33 /* Component */,
 				CC80378F1B93009600A91767 /* Const */,
 				CC80377B1B92AEF700A91767 /* Util */,
@@ -633,6 +649,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Framework",
+				);
 				INFOPLIST_FILE = NeighbourFriends/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -645,6 +665,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Framework",
+				);
 				INFOPLIST_FILE = NeighbourFriends/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

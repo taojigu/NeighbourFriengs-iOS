@@ -8,6 +8,7 @@
 
 #import "BuddyLocationTVC.h"
 #import "BuddyLocationCell.h"
+#import "BuddyLocationMapVC.h"
 
 @interface BuddyLocationTVC ()
 
@@ -31,6 +32,25 @@
 -(void)initCustomViews
 {
     [self initSearchController];
+    [self initNavigationItem];
+}
+
+-(void)initNavigationItem
+{
+    UIBarButtonItem*mapItem = [[UIBarButtonItem alloc]initWithTitle:NSLocalizedString(@"MapPatten", nil) style:UIBarButtonItemStylePlain target:self action:@selector(mapButtonClicked)];
+    self.navigationItem.rightBarButtonItem = mapItem;
+}
+
+-(void)mapButtonClicked
+{
+    
+
+    BuddyLocationMapVC*mapvc = [self.storyboard instantiateViewControllerWithIdentifier:@"BuddyLocationMapVC"];
+    mapvc.modalTransitionStyle=UIModalTransitionStyleFlipHorizontal;
+    //[self.navigationController pushViewController:mapvc animated:YES];
+    
+    UINavigationController*navi = [[UINavigationController alloc]initWithRootViewController:mapvc];
+    [self presentViewController:navi animated:YES completion:nil];
 }
 -(void)initSearchController
 {
