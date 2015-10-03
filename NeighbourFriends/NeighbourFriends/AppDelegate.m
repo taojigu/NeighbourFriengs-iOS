@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "BuddyLocationTVC.h"
 #import "ManageDemoVC.h"
+#import "ThirdPartManager.h"
 
 @interface AppDelegate ()
 

@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface BuddyLocationMapVC : UIViewController
+{
+    
+}
+
+@property(nonatomic,strong)NSMutableArray*poiArray;
 
 @end

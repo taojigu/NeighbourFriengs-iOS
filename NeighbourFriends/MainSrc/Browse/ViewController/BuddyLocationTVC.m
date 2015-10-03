@@ -9,18 +9,29 @@
 #import "BuddyLocationTVC.h"
 #import "BuddyLocationCell.h"
 #import "BuddyLocationMapVC.h"
+#import <CoreLocation/CoreLocation.h>
+#import "CCLocationManager.h"
 
 @interface BuddyLocationTVC ()
+{
+    
+}
+
+@property(nonatomic,strong)NSMutableArray*poiArray;
 
 @end
 
 @implementation BuddyLocationTVC
 
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    [self initPrivateField];
     [self initCustomViews];
+    
+    [self requestBuddyPoiArray];
 }
 
 - (void)didReceiveMemoryWarning
@@ -28,13 +39,34 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+-(void)initPrivateField
+{
+    self.poiArray = [NSMutableArray array];
+}
 -(void)initCustomViews
 {
     [self initSearchController];
     [self initNavigationItem];
 }
 
+-(void)requestBuddyPoiArray
+{
+    [[CCLocationManager shareLocation] getLocationCoordinate:^(CLLocationCoordinate2D locationCorrrdinate) {
+        
+        double lat = locationCorrrdinate.latitude;
+        double longtitude = locationCorrrdinate.longitude;
+        
+        self.poiArray = [self samplePoiArray:lat longtitude:longtitude];
+        
+        [self.tableView reloadData];
+        
+    }];
+}
+-(NSMutableArray*)samplePoiArray:(double)latitude longtitude:(double)longtitude
+{
+    NSMutableArray*array =[NSMutableArray array];
+    return array;
+}
 -(void)initNavigationItem
 {
     UIBarButtonItem*mapItem = [[UIBarButtonItem alloc]initWithTitle:NSLocalizedString(@"MapPatten", nil) style:UIBarButtonItemStylePlain target:self action:@selector(mapButtonClicked)];

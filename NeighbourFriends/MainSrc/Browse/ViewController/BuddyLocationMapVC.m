@@ -7,8 +7,15 @@
 //
 
 #import "BuddyLocationMapVC.h"
+#import <MAMapKit/MAMapKit.h>
+#import "CCLocationManager.h"
 
-@interface BuddyLocationMapVC ()
+@interface BuddyLocationMapVC ()<MAMapViewDelegate>
+{
+    
+}
+
+@property(nonatomic,strong)IBOutlet MAMapView*mapView;
 
 @end
 
@@ -29,6 +36,7 @@
 -(void)initCustomViews
 {
     [self initNavigationItems];
+    [self initMapView];
 }
 
 -(void)initNavigationItems
@@ -36,9 +44,28 @@
     UIBarButtonItem*listItem = [[UIBarButtonItem alloc]initWithTitle:NSLocalizedString(@"ListPatten", nil) style:UIBarButtonItemStylePlain target:self action:@selector(listButtonClicked)];
     self.navigationItem.rightBarButtonItem = listItem;
 }
+
+-(void)initMapView
+{
+    self.mapView.delegate = self;
+    self.mapView.showsUserLocation = YES;
+    self.mapView.showsCompass = NO;
+    self.mapView.showsScale = NO;
+    self.mapView.pausesLocationUpdatesAutomatically = NO;
+    [self.mapView setUserTrackingMode:MAUserTrackingModeFollow animated:YES];
+}
+
 -(void)listButtonClicked
 {
     [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+}
+
+-(void)mapView:(MAMapView *)mapView didUpdateUserLocation:(MAUserLocation *)userLocation updatingLocation:(BOOL)updatingLocation
+{
+    if (updatingLocation)
+    {
+        NSLog(@"latitude : %f,longitude: %f",userLocation.coordinate.latitude,userLocation.coordinate.longitude);
+    }
 }
 /*
 #pragma mark - Navigation
