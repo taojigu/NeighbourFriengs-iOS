@@ -11,6 +11,7 @@
 #import "BuddyLocationMapVC.h"
 #import <CoreLocation/CoreLocation.h>
 #import "CCLocationManager.h"
+#import "LocationWrapper.h"
 
 @interface BuddyLocationTVC ()
 {
@@ -18,6 +19,7 @@
 }
 
 @property(nonatomic,strong)NSMutableArray*poiArray;
+@property(nonatomic,assign)CLLocationCoordinate2D currentLocation;
 
 @end
 
@@ -55,6 +57,7 @@
         
         double lat = locationCorrrdinate.latitude;
         double longtitude = locationCorrrdinate.longitude;
+        self.currentLocation = locationCorrrdinate;
         
         self.poiArray = [self samplePoiArray:lat longtitude:longtitude];
         
@@ -65,6 +68,23 @@
 -(NSMutableArray*)samplePoiArray:(double)latitude longtitude:(double)longtitude
 {
     NSMutableArray*array =[NSMutableArray array];
+    for (NSInteger poiIndex = 0; poiIndex<10; poiIndex++)
+    {
+        NSMutableDictionary* dict = [NSMutableDictionary dictionary];
+        double rdmLati = (50-random()%100)*0.001+latitude;
+        double rdmLong = (50-random()%100)*0.001+longtitude;
+        dict[KeyPoiName] = [NSString stringWithFormat:@"Poi%li",poiIndex];
+        dict[KeyPoiType] = @"Home";
+        dict[KeyPoiDistance] = @"100";
+        dict[KeyPoiLatitude] = [NSNumber numberWithDouble:rdmLati];
+        dict[KeyPoiLongtitude] = [NSNumber numberWithDouble:rdmLong];
+        dict[KeyPoiAddress] = @"Address in beijing";
+        dict[KeyProfileImageUrl] = @"http://www.lanrentuku.com/down/png/0904/Mario_Galaxy/Mario_Galaxy_002.png";
+        
+        [array addObject:dict];
+        
+    }
+    
     return array;
 }
 -(void)initNavigationItem
@@ -79,6 +99,7 @@
 
     BuddyLocationMapVC*mapvc = [self.storyboard instantiateViewControllerWithIdentifier:@"BuddyLocationMapVC"];
     mapvc.modalTransitionStyle=UIModalTransitionStyleFlipHorizontal;
+    mapvc.poiArray = self.poiArray;
     //[self.navigationController pushViewController:mapvc animated:YES];
     
     UINavigationController*navi = [[UINavigationController alloc]initWithRootViewController:mapvc];
@@ -98,14 +119,24 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 10;
+    return self.poiArray.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"BuddyLocationCell" forIndexPath:indexPath];
+    BuddyLocationCell *cell = (BuddyLocationCell*)[tableView dequeueReusableCellWithIdentifier:@"BuddyLocationCell" forIndexPath:indexPath];
     
     // Configure the cell...
+    NSDictionary* dict = [self.poiArray objectAtIndex:indexPath.row];
+    cell.nameLabel.text = dict[KeyPoiName];
+    
+    NSNumber*latNumber = dict[KeyPoiLatitude];
+    NSNumber*longNumber = dict[KeyPoiLongtitude];
+    
+    NSString*distText = [[LocationWrapper sharedWrapper] distance:self.currentLocation.latitude srcLongtitude:self.currentLocation.longitude destLatitude:[latNumber doubleValue] destLongtitude:[longNumber doubleValue]];
+    cell.distanceLabel.text = distText;
+    cell.addressLabel.text = dict[KeyPoiAddress];
+    
     
     return cell;
 }

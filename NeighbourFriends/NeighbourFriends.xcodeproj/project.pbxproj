@@ -58,6 +58,8 @@
 		CC986CA21BBFE77000DDB2B1 /* TableViewPageAdaptor.m in Sources */ = {isa = PBXBuildFile; fileRef = CC986CA11BBFE77000DDB2B1 /* TableViewPageAdaptor.m */; settings = {ASSET_TAGS = (); }; };
 		CC986CAD1BBFF7BE00DDB2B1 /* CCLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC986CAA1BBFF7BE00DDB2B1 /* CCLocationManager.m */; settings = {ASSET_TAGS = (); }; };
 		CC986CAE1BBFF7BE00DDB2B1 /* CLLocation+YCLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = CC986CAC1BBFF7BE00DDB2B1 /* CLLocation+YCLocation.m */; settings = {ASSET_TAGS = (); }; };
+		CCF214AF1BC26C3000DBDB33 /* PoiAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF214AE1BC26C3000DBDB33 /* PoiAnnotation.m */; settings = {ASSET_TAGS = (); }; };
+		CCF214B21BC3AF1100DBDB33 /* LocationWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF214B11BC3AF1100DBDB33 /* LocationWrapper.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -162,6 +164,10 @@
 		CC986CAA1BBFF7BE00DDB2B1 /* CCLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCLocationManager.m; path = Componet/CCLocation/CCLocationManager.m; sourceTree = "<group>"; };
 		CC986CAB1BBFF7BE00DDB2B1 /* CLLocation+YCLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CLLocation+YCLocation.h"; path = "Componet/CCLocation/CLLocation+YCLocation.h"; sourceTree = "<group>"; };
 		CC986CAC1BBFF7BE00DDB2B1 /* CLLocation+YCLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CLLocation+YCLocation.m"; path = "Componet/CCLocation/CLLocation+YCLocation.m"; sourceTree = "<group>"; };
+		CCF214AD1BC26C3000DBDB33 /* PoiAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PoiAnnotation.h; path = MainSrc/Common/Model/PoiAnnotation.h; sourceTree = "<group>"; };
+		CCF214AE1BC26C3000DBDB33 /* PoiAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PoiAnnotation.m; path = MainSrc/Common/Model/PoiAnnotation.m; sourceTree = "<group>"; };
+		CCF214B01BC3AF1100DBDB33 /* LocationWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocationWrapper.h; path = Componet/CCLocation/LocationWrapper.h; sourceTree = "<group>"; };
+		CCF214B11BC3AF1100DBDB33 /* LocationWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocationWrapper.m; path = Componet/CCLocation/LocationWrapper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -358,6 +364,7 @@
 		CC80377A1B92AEDA00A91767 /* MainSrc */ = {
 			isa = PBXGroup;
 			children = (
+				CCF214AB1BC26B6600DBDB33 /* Common */,
 				CC7BFACA1B992C8E00065A33 /* Test */,
 				CC80377F1B92E69C00A91767 /* Buddy */,
 				CC80377E1B92E68F00A91767 /* Manage */,
@@ -370,6 +377,7 @@
 		CC80377B1B92AEF700A91767 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				CCF214A61BC2616400DBDB33 /* LBS */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -486,8 +494,34 @@
 				CC986CAA1BBFF7BE00DDB2B1 /* CCLocationManager.m */,
 				CC986CAB1BBFF7BE00DDB2B1 /* CLLocation+YCLocation.h */,
 				CC986CAC1BBFF7BE00DDB2B1 /* CLLocation+YCLocation.m */,
+				CCF214B01BC3AF1100DBDB33 /* LocationWrapper.h */,
+				CCF214B11BC3AF1100DBDB33 /* LocationWrapper.m */,
 			);
 			name = Location;
+			sourceTree = "<group>";
+		};
+		CCF214A61BC2616400DBDB33 /* LBS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = LBS;
+			sourceTree = "<group>";
+		};
+		CCF214AB1BC26B6600DBDB33 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CCF214AC1BC26B7300DBDB33 /* Model */,
+				CCF214AD1BC26C3000DBDB33 /* PoiAnnotation.h */,
+				CCF214AE1BC26C3000DBDB33 /* PoiAnnotation.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		CCF214AC1BC26B7300DBDB33 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -623,6 +657,7 @@
 				CC8037521B8F502000A91767 /* main.m in Sources */,
 				CC7BFAF11B99494E00065A33 /* MJRefreshFooter.m in Sources */,
 				CC986CAE1BBFF7BE00DDB2B1 /* CLLocation+YCLocation.m in Sources */,
+				CCF214AF1BC26C3000DBDB33 /* PoiAnnotation.m in Sources */,
 				CC7BFAF61B99494E00065A33 /* MJRefreshLegendHeader.m in Sources */,
 				CC7BFACF1B9931FC00065A33 /* ManageDemoVC.m in Sources */,
 				CC7BFAF01B99494E00065A33 /* MJRefreshConst.m in Sources */,
@@ -631,6 +666,7 @@
 				CC7BFAF51B99494E00065A33 /* MJRefreshLegendFooter.m in Sources */,
 				CC8037A21B93103900A91767 /* ImportMoblieBuddyVC.m in Sources */,
 				CC7BFAD31B993D9A00065A33 /* BuddyLocationCell.m in Sources */,
+				CCF214B21BC3AF1100DBDB33 /* LocationWrapper.m in Sources */,
 				CC7BFAF41B99494E00065A33 /* MJRefreshHeader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
