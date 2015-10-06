@@ -127,7 +127,7 @@
     BuddyLocationCell *cell = (BuddyLocationCell*)[tableView dequeueReusableCellWithIdentifier:@"BuddyLocationCell" forIndexPath:indexPath];
     
     // Configure the cell...
-    NSDictionary* dict = [self.poiArray objectAtIndex:indexPath.row];
+    NSMutableDictionary* dict = [self.poiArray objectAtIndex:indexPath.row];
     cell.nameLabel.text = dict[KeyPoiName];
     
     NSNumber*latNumber = dict[KeyPoiLatitude];
@@ -136,6 +136,7 @@
     NSString*distText = [[LocationWrapper sharedWrapper] distance:self.currentLocation.latitude srcLongtitude:self.currentLocation.longitude destLatitude:[latNumber doubleValue] destLongtitude:[longNumber doubleValue]];
     cell.distanceLabel.text = distText;
     cell.addressLabel.text = dict[KeyPoiAddress];
+    dict[KeyPoiDistance] =  distText;
     
     
     return cell;
