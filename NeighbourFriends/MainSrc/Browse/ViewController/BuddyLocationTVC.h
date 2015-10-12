@@ -6,6 +6,7 @@
 //  Copyright (c) 2015年 gujitao. All rights reserved.
 //
 
+//merge test
 #import <UIKit/UIKit.h>
 
 @interface BuddyLocationTVC : UITableViewController
